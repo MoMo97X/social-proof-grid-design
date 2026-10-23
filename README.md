@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [github](https://github.com/MoMo97X/social-proof-grid-design)
+- Live Site URL: [front-end mentor](https://www.frontendmentor.io/profile/MuhammedArrujbani)
 
 ## My process
 
