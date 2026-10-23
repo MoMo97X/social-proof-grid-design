@@ -9,6 +9,7 @@
   /* ***** Primary ***** */
   --Very-Dark-Magenta: hsl(300, 43%, 22%);
   --Soft-Pink: hsl(333, 80%, 67%);
+  --attribute: hsl(228, 45%, 44%);
 
   /* ##### Neutral ##### */
 
@@ -88,7 +89,7 @@ body {
   background-color: var(--Light-Grayish-Magenta);
 }
 
-.rates .rate span:first-child {
+.rate span:first-child {
   display: grid;
   grid-template-columns: repeat(5, auto);
   place-content: center;
@@ -126,10 +127,11 @@ body {
 }
 
 .card .card-info .info-title {
+  font-size: var(--fs);
   color: var(--Light-Grayish-Magenta);
 }
 
-.card .card-info .info-title span {
+.card-info .info-title span {
   color: var(--Soft-Pink);
   margin-block-start: var(--margin-block);
 }
