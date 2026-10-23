@@ -53,10 +53,14 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
+  background-image: url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
 }
 
 .wrapper .header {
   text-align: center;
+  background-image: url(images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
   color: var(--Very-Dark-Magenta);
 }
 
@@ -79,10 +83,11 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
+  justify-items: center;
 }
 
 .rates .rate {
-  margin-inline: auto;
+  width: 100%;
   padding: var(--padding);
   border-radius: 0.5rem;
   font-weight: var(--fw-700);
@@ -147,18 +152,27 @@ body {
 
 /* **** medium screen **** */
 @media (min-width: 45rem) {
-  .footer .cards {
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    column-gap: 1rem;
+  .wrapper {
+    width: 98%;
+    margin-inline: auto;
+    padding: var(--padding-inline);
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    box-shadow: 1rem 1rem 2rem 0 #ddd;
   }
 
-  .wrapper {
-    padding: var(--padding-inline);
-    width: 65rem;
+  .wrapper .header {
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
   }
 
   .header .rates .rate {
     width: 80%;
+  }
+
+  .footer .cards {
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    column-gap: 0.5rem;
   }
 }
 
@@ -190,16 +204,16 @@ body {
     text-align: left;
   }
 
+  .rates .reviews {
+    margin-inline-start: calc(var(--margin-inline) - 2rem);
+  }
+
   .rates .guru {
-    margin-inline-start: calc(var(--margin-inline) + 1rem);
+    margin-inline-start: calc(var(--margin-inline) + 2rem);
   }
 
   .rates .best-tech {
-    margin-inline-start: calc(var(--margin-inline) + 3.5rem);
-  }
-
-  .cards .card {
-    width: 80%;
+    margin-inline-start: calc(var(--margin-inline) + 8rem);
   }
 
   .cards .irene {
@@ -207,6 +221,6 @@ body {
   }
 
   .cards .anne {
-    margin-block-start: calc(var(--margin-inline) + 3.5rem);
+    margin-block-start: calc(var(--margin-inline) + 4rem);
   }
 }
